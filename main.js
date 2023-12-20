@@ -30,11 +30,11 @@ export const riceCooker = {
     }
   },
 
-  steam() {
+  async steam() {
     if (this.ricePresent && !this.steamingInProgress) {
       console.log('Steaming in progress...');
       this.steamingInProgress = true;
-      setTimeout(1500);
+      await riceCooker.delaySync(1500);
       this.steamingInProgress = false;
       console.log('Steaming completed!');
     } else if (!this.ricePresent) {
@@ -68,6 +68,10 @@ export const riceCooker = {
       console.log('There\'s no rice to remove or it is not cooked yet.');
     }
   },
+
+  delaySync(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 };
 
 export function simulateRiceCooker() {
