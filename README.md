@@ -17,3 +17,15 @@
 > This part can be found directly in the code
 
 ## Complexity analysis of modified code
+
+### 1. Spatial complexity
+
+> **`O(1)`**
+
+### 2. Time Complexity
+
+> **`O(1)`**
+
+### 3. Analysis of the number of operations
+
+> This part can be found directly in the code

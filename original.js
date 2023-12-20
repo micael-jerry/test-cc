@@ -82,7 +82,7 @@ export function simulateRiceCooker() {
   const condition = true;                     // 1
 
   while (condition) {                         // 1
-    displayMenu();
+    displayMenu();                            // 1
     input = prompt('Enter your choice: ');    // 1
 
     if (input) {                              // 2
